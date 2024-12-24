@@ -8,4 +8,4 @@ COPY mvnw .
 COPY pom.xml .
 COPY src ./src 
 
-ENTRYPOINT ["java", "-jar"]
+ENTRYPOINT ["java"]
