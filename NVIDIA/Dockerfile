@@ -7,7 +7,7 @@ COPY ./NVIDIA/pom.xml .
 RUN mvn dependency:go-offline
 
 # Copy the rest of the source code
-COPY src ./NVIDIA/src
+COPY NVIDIA/src ./src
 RUN mvn clean package -DskipTests
 
 # Runtime stage
