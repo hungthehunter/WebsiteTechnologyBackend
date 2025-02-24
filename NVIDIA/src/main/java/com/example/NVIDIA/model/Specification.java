@@ -39,4 +39,9 @@ public class Specification {
 	@JoinColumn(name = "product_id")
 	@JsonBackReference(value="product-specification")
 	private Product product;
+	
+	@ManyToOne
+	@JoinColumn(name = "banner_id")
+	@JsonBackReference(value="banner-specification")
+	private Banner banner;
 }

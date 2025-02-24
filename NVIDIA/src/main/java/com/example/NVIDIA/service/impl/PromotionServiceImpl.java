@@ -1,27 +1,20 @@
 package com.example.NVIDIA.service.impl;
 import java.io.IOException;
 import java.time.LocalDateTime;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
 import java.util.stream.Collectors;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
-
 import com.cloudinary.Cloudinary;
 import com.cloudinary.utils.ObjectUtils;
 import com.example.NVIDIA.dto.PromotionDTO;
 import com.example.NVIDIA.mapper.PromotionDTOMapper;
-import com.example.NVIDIA.model.Category;
 import com.example.NVIDIA.model.ImageCloud;
-import com.example.NVIDIA.model.Product;
 import com.example.NVIDIA.model.Promotion;
 import com.example.NVIDIA.repository.PromotionRepository;
-import com.example.NVIDIA.repository.ProductRepository;
-import com.example.NVIDIA.repository.CategoryRepository;
 import com.example.NVIDIA.service.PromotionService;
 
 @Service
@@ -29,12 +22,6 @@ public class PromotionServiceImpl implements PromotionService {
 
     @Autowired
     private PromotionRepository promotionRepository;
-
-    @Autowired
-    private ProductRepository productRepository;
-
-    @Autowired
-    private CategoryRepository categoryRepository;
 
     @Autowired
     private PromotionDTOMapper promotionDTOMapper;

@@ -117,7 +117,11 @@ public class NvidiaApplication implements CommandLineRunner {
                     new Function(52L,true ,"View Promotion List"),
                     new Function(53L,true ,"Create Promotion"),
                     new Function(54L,true ,"Edit Promotion"),
-                    new Function(55L,true ,"Delete Promotion")
+                    new Function(55L,true ,"Delete Promotion"),
+                    new Function(56L,true ,"View Banner List"),
+                    new Function(57L,true ,"Edit Banner"),
+                    new Function(58L,true ,"Create Banner"),
+                    new Function(59L,true ,"Delete Banner")
                 ));
             }
 

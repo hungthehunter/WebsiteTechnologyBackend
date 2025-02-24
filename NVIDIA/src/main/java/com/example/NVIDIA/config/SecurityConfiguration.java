@@ -196,9 +196,17 @@ public class SecurityConfiguration {
 				//Review
 				.requestMatchers(HttpMethod.POST,"/api/reviews").permitAll()
 				.requestMatchers(HttpMethod.GET,"/api/reviews").permitAll()
+				.requestMatchers(HttpMethod.GET,"/api/reviews/product/{id}").permitAll()
 				.requestMatchers(HttpMethod.GET,"/api/reviews/{id}").permitAll()
 				.requestMatchers(HttpMethod.DELETE,"/api/reviews/{id}").permitAll()
 				.requestMatchers(HttpMethod.PUT,"/api/reviews/{id}").permitAll()
+				
+				//Banner
+				.requestMatchers(HttpMethod.POST,"/api/banners").permitAll()
+				.requestMatchers(HttpMethod.GET,"/api/banners").permitAll()
+				.requestMatchers(HttpMethod.GET,"/api/banners/{id}").permitAll()
+				.requestMatchers(HttpMethod.DELETE,"/api/banners/{id}").permitAll()
+				.requestMatchers(HttpMethod.PUT,"/api/banners/{id}").permitAll()
 				
 				// Import
 				.requestMatchers(HttpMethod.POST, "/api/imports").permitAll()
@@ -215,6 +223,9 @@ public class SecurityConfiguration {
 				.requestMatchers(HttpMethod.GET, "/api/exports/product/{id}").permitAll()
 				.requestMatchers(HttpMethod.PUT, "/api/exports/{id}").permitAll()
 				.requestMatchers(HttpMethod.DELETE, "/api/exports/{id}").permitAll()
+				
+				//Summary Review
+				.requestMatchers(HttpMethod.GET, "/api/summary").permitAll()
 				
 				.anyRequest().authenticated())
 		

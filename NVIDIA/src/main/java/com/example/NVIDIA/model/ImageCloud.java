@@ -50,4 +50,7 @@ private Manufacturer manufacturer;
 @JsonBackReference(value="promotion-image")
 private Promotion promotion;
 
+@OneToOne(mappedBy="imageCloud")
+@JsonBackReference(value="banner-image")
+private Banner banner;
 }

@@ -13,4 +13,7 @@ public enum ProcessingStates {
 	
 //  Nếu người mua đổi ý không mua nữa
 	Canceled,
+	
+//  Nếu người mua trả hàng
+	Return,
 }
