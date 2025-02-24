@@ -3,9 +3,9 @@ spring:
     name: session
 
   datasource:
-    url: jdbc:mysql://${DATABASE_HOST:localhost}:3306/${DATABASE_NAME:nvidiaconvince}
-    username: ${DATABASE_USER:root}
-    password: ${DATABASE_PASSWORD:Grandy-092358}
+    url: jdbc:mysql://${DATABASE_HOST}:3306/${DATABASE_NAME}
+    username: ${DATABASE_USER}
+    password: ${DATABASE_PASSWORD}
     driver-class-name: com.mysql.cj.jdbc.Driver
     hikari:
       maximum-pool-size: 10
